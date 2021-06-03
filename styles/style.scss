@@ -23,14 +23,57 @@ flex-direction: $direction;
 
 
 @media screen and (max-width:1070px){
+    html{
+        font-size: 90%;
+    }
+    main{
+        width: 100%;
+    }
     .splash{
         display: none;
     }
+    .intro-text{
+        @include flex(column,center,center);
+        text-align:center;
+    }
     .intro-images{
+        background: linear-gradient(140deg,rgb(96, 171, 233) , rgb(93, 230, 127));
+        flex:1 1 45rem;
         height:100vh;
         svg{
-            height:auto;
+            height:90%;
             max-width:80%;
         }
     }
+    nav{
+        height: 15vh;
+        width: 100%;
+        @include flex(row,center,center);
+    }
+    main{
+        height: 85vh;
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+        width: 100%;
+    }
+    nav{
+        @include flex(row,center,center);
+        .logo{
+            @include flex(row,center,center);
+            flex:1 1 20rem;
+            padding:2rem;
+            }
+        .links{
+            flex:1 1 20rem;
+        }
+    }
+}
+
+@media screen and (min-width:1500px){
+html{
+    font-size: 200%;
+}
 }
