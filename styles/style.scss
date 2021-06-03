@@ -1,0 +1,36 @@
+
+$h1: 4rem;
+$h2: 3.5rem;
+$h3: 3rem;
+$h4: 2.5rem;
+$h5: 2rem;
+$h6: 1.5rem;
+$common: 1.2rem;
+$text: 1.1rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$bgc: #154353;
+$gray-text: #2c2c2c;
+
+@mixin flex($direction, $justify , $align){
+display: flex;
+justify-content: $justify;
+align-items: $align;
+flex-direction: $direction;
+}
+
+@import 'global';
+@import 'intro';
+
+
+@media screen and (max-width:1070px){
+    .splash{
+        display: none;
+    }
+    .intro-images{
+        height:100vh;
+        svg{
+            height:auto;
+            max-width:80%;
+        }
+    }
+}

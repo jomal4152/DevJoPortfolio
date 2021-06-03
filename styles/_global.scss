@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'poppins', sans-serif;
+}
+
+h1{
+    font-size: $h3;
+}
+
+h2{
+    font-size:$h4;
+}
+h3{
+    font-size:$h5;
+}
+
+p,
+input,
+button,
+li{
+    font-size: $text;
+}
